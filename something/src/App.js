@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import SavedList from "./Movies/SavedList";
 import MovieList from "./Movies/MovieList";
 import Movie from "./Movies/Movie";
+import UpdateMovieForm from "./Movies/update-movies";
 
 const App = () => {
   const [savedList, setSavedList] = useState([]);
@@ -22,7 +23,7 @@ const App = () => {
         }}        
       />
       <Route
-          path="/update-movies/:id"/>
+          path="/update-movies/:id" component={UpdateMovieForm}/>
     </>
   );
 };
