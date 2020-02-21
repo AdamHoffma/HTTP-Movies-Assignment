@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 import SavedList from "./Movies/SavedList";
 import MovieList from "./Movies/MovieList";
 import Movie from "./Movies/Movie";
-import UpdateMovieForm from './Movies/update-movies'
+import UpdateMovieForm from "./Movies/update-movies";
 
 const App = () => {
   const [savedList, setSavedList] = useState([]);

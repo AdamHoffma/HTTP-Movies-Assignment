@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import UpdateMovieForm from './update-movies'
+
 export default class SavedList extends Component {
   constructor(props) {
     super(props);
@@ -22,9 +24,9 @@ export default class SavedList extends Component {
         })}
         <div className="home-button">
           <Link to="/">Home</Link>
+          <div className="home-button">
+          <Link to ="/update-movies" component={UpdateMovieForm}>Update</Link>
         </div>
-        <div className="home-button">
-          <Link to ="/update-movies">Update</Link>
         </div>
       </div>
     );
